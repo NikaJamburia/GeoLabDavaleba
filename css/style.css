@@ -81,13 +81,26 @@ footer hr{
 .icon-box{
     height:40px;
 }
-.social-icon{
-    fill:rgb(163, 163, 163);
-    height:35px;
-    width:35px;
+.social-link{
+    text-decoration: none;
+}
+.social-link i{
+    color:rgb(163, 163, 163);
+    font-size: 35px;
     margin-left:30px;
     transition: 100ms;
 }
-.social-icon:hover{
-    fill:white;
+.social-link i:hover{
+    color:white;
+}
+.social-link::after{
+    content:"";
+    display: inline-block;
+    background-color: rgb(163, 163, 163);
+    width:2px;
+    height: 28px;
+    margin-left:25px;
+}
+.social-link:last-child::after{
+    display: none;
 }
