@@ -15,10 +15,10 @@
     
     <title>Davaleba</title>
 </head>
-<body>
+<body id="body">
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top position-fixed bg-dark">
+        <nav id="nav" class="navbar navbar-expand-md navbar-dark fixed-top position-fixed bg-dark d-none navbar-anim">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" width='30' alt="Logo">
                 <span>Text</span>
@@ -32,13 +32,13 @@
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="#">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="#">Contact</a>
+                  <a class="nav-link " href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Ragaca</a>
+                    <a class="nav-link " href="#">Contact</a>
                 </li>
               </ul>
             </div>
@@ -46,52 +46,123 @@
     </header>
 
     <section>
-      <div class="container-fluid p-0">
+      <!-- <div class="container-fluid p-0">
         <div class="cover-image-box">
           <h1>RAGACA TEXTI</h1>
         </div>
+      </div> -->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cover-image-box">
+                <h1>RAGACA TEXTI</h1>
+                <p>sxva ragaca texti texti texti textigfewrgehgethwgwhw</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cover-image-box cover-2">
+              <h1>RAGACA TEXTI</h1>
+              <p>sxva ragaca texti texti texti textigfewrgehgethwgwhw</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cover-image-box cover-3">
+              <h1>RAGACA TEXTI</h1>
+              <p>sxva ragaca texti texti texti textigfewrgehgethwgwhw</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true">
+            <img style="margin:0" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(66, 66, 66)' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e" alt="">
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true">
+            <img style="margin:0" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(66, 66, 66)' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e"" alt="">
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
 
     <section>
         <h2 class="text-center text-dark mt-3">What We offer</h2>
         <hr>
-      <div class="container">
+      <div class="container-fluid section-2">
 
-        <div class="row justify-content-between">
+        <div class="row">
 
-          <div class="col-md-4 col-sm-5 col-xs-6 bg-dark">
-            <h3 class="text-center text-light">Design</h3>
-            <hr class="bg-secondary">
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.
-            </p>
-            <div class="mt-5 mb-3 text-center">
-              <button class="btn btn-outline-success">Read More</button>
+          <div class="col-md-4 ">
+            <div class="bg-dark">
+                <h3 class="text-center text-light">Consulting</h3>
+                <hr class="bg-secondary">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                    consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.
+                </p>
+                <div class="mt-5 text-center">
+                  <button class="btn btn-outline-success">Read More</button>
+                </div>
             </div>
+
           </div>
+
+          <div class="col-md-4">
+            <div class="bg-dark">
+                <h3 class="text-center text-light">Design</h3>
+                <hr class="bg-secondary">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                    consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.
+                </p>
+                <div class="mt-5 text-center">
+                  <button class="btn btn-outline-success">Read More</button>
+                </div>
+            </div>
+              
+            </div>
           
-          <div class="col-md-4 col-sm-5 col-xs-6 bg-dark">
-              <h3 class="text-center text-light">Development</h3>
-              <hr class="bg-secondary">
-              <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                  tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                  quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                  consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                  molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.
-              </p>
-              <div class="mt-5 mb-3 text-center">
-                <button class="btn btn-outline-success">Read More</button>
-              </div>
+          <div class="col-md-4 ">
+            <div class="bg-dark">
+                <h3 class="text-center text-light">Development</h3>
+                <hr class="bg-secondary">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                    consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.
+                </p>
+                <div class="mt-5 text-center">
+                  <button class="btn btn-outline-success">Read More</button>
+                </div>
+            </div>
+              
           </div>
         </div>
       </div>
     </section>
+
+    <section>
+        <h2 class="text-center text-dark mt-3">Who we are</h2>
+        <hr>
+        <div class="who d-flex"></div>
+    </section>
+
 
     <footer>
         <div class="container-fluid px-5">
@@ -99,33 +170,25 @@
                 <div class="float-left">
                     <ul>
                         <li>
-                            <a href="">Home</a>
-                        </li>
-                        <li>
-                            <a href="">About us</a>
-                        </li>
-                        <li>
                             <a href="">Contact</a>
                         </li>
                         <li>
-                            <a href="">Ragaca</a>
+                            <a href="">Services</a>
+                        </li>
+                        <li>
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
                         </li>
                     </ul>
                 </div>
                 <div class="float-right">
-                    <ul>
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-                        <li>
-                            <a href="">About us</a>
-                        </li>
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
-                        <li>
-                            <a href="">Ragaca</a>
-                        </li>
+                    <ul class="footer-contact">
+                      Contact Information <br> <br>
+                      Email: ragaca@gmail.com <br>
+                      Tel: +955 111 111 111 <br>
+                      Address: Aleqsidze 10
                     </ul>
                 </div>
             </div>
@@ -153,7 +216,12 @@
     
     
     
-    
+<script>
+    document.addEventListener('scroll', function(){
+      document.getElementById('nav').classList.remove('d-none');
+      document.getElementById('nav').classList.add('navbar-anim');
+    });
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
