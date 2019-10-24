@@ -115,9 +115,34 @@ section .col-md-4 div p{
     padding-bottom: 10px;
 }
 
+/* SECTION 3 */
+.about-us{
+    height:500px;;
+}
+.about-us div{
+    height:300px;
+    width:400px;
+}
+.about-us-text{
+    min-height: 300px !important;
+    max-height: 300px !important;
+    overflow: hidden;
+}
+.about-us-text p{
+    min-height: 192px !important;
+    max-height: 192px !important;
+    overflow: hidden;
+}
 
-.who{
-    height:100vh;
+.about-us div img{
+    width:inherit;
+    height:300px;
+}
+.vertical-line{
+    background-color: rgb(204, 204, 204);
+    width:1px !important;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 /* FOOTER */
