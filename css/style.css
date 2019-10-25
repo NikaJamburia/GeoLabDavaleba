@@ -1,10 +1,11 @@
-body{
+html, body{
     margin: 0;
     padding: 0;
+    
+    max-width: 100%;
+    overflow-x: hidden;
 }
-.row{
-    padding: 0;
-}
+
 
 /* HEADER */
 nav{
@@ -144,6 +145,29 @@ section .col-md-4 div p{
     margin-left:10px;
     margin-right:10px;
 }
+
+/* SECTION 4 */
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:440px;
+    width:100%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:440px;
+    width:100%;
+}
+.contact-information i{
+    margin-right:10px;
+    color:rgb(46, 46, 46);
+}
+.contact-box{
+    margin-right:0 !important;
+}
+
 
 /* FOOTER */
 footer .container-fluid{
